@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+editor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .editor-container {
+    flex-direction: row;
+  }
+}
+.editor {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  min-height: 400px;
+  background-color: #fff;
+  outline: none;
+  transition: border 0.2s ease;
+}
+.editor:focus {
+  border-color: #0078d7;
+}
+
+.preview {
+  flex: 1;
+  padding: 15px;
+  border: 1px solind #ccc;
+  border-radius: 6px;
+  min-height: 400px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.preview h1,
+.preview h2,
+.preview h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+.preview code{
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+.preview pre{
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+.preview a {
+  color:#0078d7;
+  text-decoration: none;
+}
+.preview a:hover{
+  text-decoration: underline;
+}
+
+.preview ul{
+  margin-left: 20px;
+}
+.preview p{
+  line-height: 1.5;
+}
